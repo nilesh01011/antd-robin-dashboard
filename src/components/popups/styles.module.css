@@ -1,0 +1,42 @@
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+.notification .notificationHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notification .notificationContainerCount {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background: #FF3E5B;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+.notification .notificationContainer {
+  position: absolute;
+  right: -15px;
+  width: 380px;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  z-index: 50;
+  top: 160%;
+  padding: 14px 11px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.notification .notificationContainer .arrowIcons {
+  position: absolute;
+  right: 15px;
+  top: -16px;
+  z-index: 55;
+}/*# sourceMappingURL=styles.module.css.map */

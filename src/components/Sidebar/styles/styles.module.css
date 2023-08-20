@@ -1,0 +1,57 @@
+.sidebar {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  position: sticky !important;
+  top: 0 !important;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.15);
+  max-width: 282px !important;
+  width: 100%;
+}
+.sidebar .sidebarHeader {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.sidebar .sidebarHeader .iconRotate {
+  transform: rotate(180deg);
+}
+.sidebar .themeContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.sidebar .themeContainer .themeWrapper {
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .themeContainer .themeWrapper .themeBtn {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sidebar .themeContainer .themeWrapper .themeCollapsedBtn {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.module.css.map */

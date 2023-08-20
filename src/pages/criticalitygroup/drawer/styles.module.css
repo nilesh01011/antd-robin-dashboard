@@ -1,0 +1,105 @@
+.ant-drawer-content-wrapper .DrawerContainer {
+  padding: 16px 20px;
+}
+.ant-drawer-content-wrapper .DrawerContainer .ant-drawer-wrapper-body .ant-drawer-body {
+  padding: 0 !important;
+}
+
+.DrawerContainer {
+  position: relative;
+  width: 100%;
+}
+.DrawerContainer .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.DrawerContainer .head h3 {
+  width: -moz-max-content;
+  width: max-content;
+}
+.DrawerContainer .head span {
+  cursor: pointer;
+}
+.DrawerContainer .allowedTime {
+  width: 100%;
+}
+.DrawerContainer .allowedTime .timeContent {
+  padding: 12px 16px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.DrawerContainer .allowedTime .timeContent .timePicker {
+  width: 100%;
+}
+.DrawerContainer .allowedTime .timeContent .timePicker .timeStamp {
+  width: 100%;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.DrawerContainer .allowedTime .timeContent .timePicker .darkTheme input {
+  color: #fff;
+}
+.DrawerContainer .allowedTime .timeContent .timePicker .lightTheme input {
+  color: #000;
+}
+.DrawerContainer .allowedTime .timeContent .button {
+  padding: 6px 16px;
+  border-radius: 4px;
+  color: #fff;
+  background: #FF3E5B;
+  border: none;
+  outline: none;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.DrawerContainer .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+.DrawerContainer .footer button {
+  padding: 6px 16px;
+  font-weight: 500;
+  background: transparent;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.DrawerContainer .footer .buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.DrawerContainer .footer .buttonContainer button {
+  background: #FF3E5B;
+  color: #fff;
+  border: 1px solid #FF3E5B;
+}
+
+.lightTheme input {
+  color: #000;
+}
+
+.darkTheme input {
+  color: #fff !important;
+}
+
+.switchInput[aria-checked=true] {
+  background: #70C922;
+}
+
+.switchInput:hover[aria-checked=true] {
+  background: #70C922 !important;
+}/*# sourceMappingURL=styles.module.css.map */

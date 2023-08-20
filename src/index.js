@@ -3,11 +3,33 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from 'antd';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store, persistor } from './store/index';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      {/* redux persist */}
+      <PersistGate loading={null} persistor={persistor}>
+        {/* antD */}
+        <ConfigProvider
+        // theme={{
+        //   token: {
+        //     colorPrimary: 'inherit',
+        //   },
+        // }}
+        >
+          {/* react routers */}
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ConfigProvider>
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

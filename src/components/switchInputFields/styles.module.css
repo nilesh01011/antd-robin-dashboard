@@ -1,0 +1,7 @@
+.switchInput[aria-checked=true] {
+  background: #70C922;
+}
+
+.switchInput:hover[aria-checked=true] {
+  background: #70C922 !important;
+}/*# sourceMappingURL=styles.module.css.map */

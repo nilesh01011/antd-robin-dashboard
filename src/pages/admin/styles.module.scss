@@ -1,0 +1,52 @@
+.adminMaster {
+    .tabs {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        gap: 5px;
+        border-radius: 4px;
+        height: 50px;
+
+        & button {
+            padding: 6px 8px;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .inputFields {
+        width: 400px;
+        height: 50px;
+        position: relative;
+        border-radius: 4px;
+
+        & .dropdown {
+            position: absolute;
+            left: 8px;
+            top: 0.6rem;
+            min-width: 140px;
+
+            & .selectOptions {
+                width: 100%;
+            }
+        }
+
+        & input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding-left: 160px;
+        }
+
+        & .icons {
+            position: absolute;
+            right: 0.8rem;
+            top: 30%;
+            cursor: pointer;
+        }
+    }
+}

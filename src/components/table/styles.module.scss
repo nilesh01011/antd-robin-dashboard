@@ -1,0 +1,59 @@
+.tableData {
+    height: 55vh;
+    width: 100%;
+
+    & table {
+        width: 100%;
+
+        & tbody {
+            & .tableRowData {
+                & td {
+                    padding: 18px 20px;
+                    text-align: left;
+                    font-size: 16px;
+
+                    & .statusGreen {
+                        padding: 3px 8px;
+                        background-color: #EEFCD2;
+                        color: #70C922 !important;
+                        border: 1px solid #70C922;
+                        border-radius: 2px;
+                    }
+                }
+
+                & .actions {
+                    & span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tableEmpty,
+.tableData {
+    border-radius: 4px;
+
+    & table {
+        width: 100%;
+
+        & thead {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: max-content;
+
+            & .tableHead {
+                padding: 18px 20px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .tableData {
+        height: 270px !important;
+    }
+}

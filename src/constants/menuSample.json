@@ -1,0 +1,63 @@
+{
+    "status": "OK",
+    "statusCode": 200,
+    "responseMessage": "User Menus Retrieved Successfully.",
+    "data": [
+        {
+            "menuId": "COMN",
+            "menuTitle": "Common",
+            "parentMenuId": "Web",
+            "menuIconUrl ": "<BsFillStarFill fontSize={20} />",
+            "accessType": "R",
+            "isFavourite": "1",
+            "subMenu": [
+                {
+                    "menuId": "COMN-02.01",
+                    "menuTitle": "Portal",
+                    "parentMenuId": "COMN",
+                    "menuIconUrl ": " Url for commonicon",
+                    "accessType": "R",
+                    "isFavourite": "0",
+                    "subMenu": [
+                        {
+                            "menuId": "COMN-02.01.01",
+                            "menuTitle": "Login",
+                            "parentMenuId": "COMN-02.01",
+                            "menuIconUrl ": " Url for commonicon",
+                            "accessType": "R",
+                            "isFavourite": "1",
+                            "subMenu": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "menuId": "SALE",
+            "menuTitle": "SALE",
+            "parentMenuId": "Web",
+            "menuIconUrl ": "",
+            "accessType": "R",
+            "isFavourite": "0",
+            "subMenu": [
+                {
+                    "menuId": "SACT-02.01",
+                    "menuTitle": "Forecasting",
+                    "parentMenuId": "SALE",
+                    "menuIconUrl ": "",
+                    "accessType": "R",
+                    "isFavourite": "1",
+                    "subMenu": {
+                        "menuId": "SACT-02.01.01",
+                        "menuTitle": "Dealer Demand Forecasting Lock",
+                        "parentMenuId": "SACT-02.01",
+                        "menuIconUrl ": "",
+                        "accessType": "R",
+                        "isFavourite": "0",
+                        "subMenu": []
+                    }
+                }
+            ]
+        }
+    ]
+}

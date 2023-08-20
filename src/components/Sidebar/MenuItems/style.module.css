@@ -1,0 +1,65 @@
+.menuListContainer {
+  margin-bottom: 1rem;
+}
+
+.menuLists {
+  padding-top: 5px;
+  position: relative;
+}
+.menuLists ul {
+  margin: 0 !important;
+}
+.menuLists .menuItemsHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.menuLists .menuItemsHead .tooltip {
+  position: absolute;
+  top: 30%;
+  left: 200%;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  background-color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.menuLists .items {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 10px;
+  font-size: 16px;
+}
+.menuLists .items .tooltip {
+  position: absolute;
+  top: 50%;
+  left: 180%;
+  transform: translateY(-50%);
+  color: #000;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  padding: 6px 14px;
+  border-radius: 5px;
+  height: -moz-max-content;
+  height: max-content;
+  z-index: 10;
+  background: inherit;
+}
+.menuLists .items .tooltip::before {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  border-right-color: inherit;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=style.module.css.map */
